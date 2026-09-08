@@ -15,5 +15,12 @@
 - `13_streaming`：让模型答案以流式方式实时显示
 - `14_streaming_rag`：把流式输出接入完整 RAG Chain
 - `15_batch_processing`：批量执行多个 RAG 问题并测量吞吐量
+- `16_hybrid_retrieval`：融合关键词与向量检索并进行重排序
+- `17_rag_benchmark`：用相近主题文档构造检索基准集
+- `18_hard_retrieval_eval`：使用困难问题和 MRR 检查检索排名
+- `19_rag_quality_eval`：联合评估检索、回答事实覆盖率和延迟
+- `20_groundedness_eval`：检查回答句子是否有检索上下文依据
+- `21_groundedness_improved`：降低依据评估中的格式误报
+- `22_citation_guard`：要求并校验 RAG 回答中的引用来源
 
 根目录的 `rag.py` 是后续课程共用的 RAG 组件。
