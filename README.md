@@ -23,3 +23,7 @@ python rag_chat.py
 提问时程序会先打印检索到的文件来源，再让 Qwen 依据这些片段回答。
 当前版本使用 DashScope 的 `text-embedding-v3`，可通过 `QWEN_EMBEDDING_MODEL` 修改。
 `RAG_MAX_DISTANCE` 控制检索距离阈值，默认 `1.2`；距离超过阈值的片段会被过滤。
+
+## 个人 AI 学习助手 MVP
+
+项目已进入真实应用阶段。FastAPI 后端位于 `app/`，运行方式与接口说明见 `app/README.md`。

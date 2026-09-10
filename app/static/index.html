@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="基于本地学习笔记的 AI 学习助手" />
+    <title>知径 · AI 学习助手</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="workspace">
+      <aside class="sidebar">
+        <header class="brand">
+          <span class="brand-mark" aria-hidden="true">知</span>
+          <div>
+            <h1>知径</h1>
+            <p>AI 学习助手</p>
+          </div>
+        </header>
+
+        <section class="source-panel" aria-labelledby="source-title">
+          <div class="section-heading">
+            <h2 id="source-title">知识库</h2>
+            <span class="status" id="service-status">连接中</span>
+          </div>
+          <p class="source-count">6 篇学习笔记</p>
+          <div class="source-tags">
+            <span>RAG</span><span>Agent</span><span>Python</span>
+          </div>
+        </section>
+
+        <div class="sidebar-footer">
+          <a href="/docs" target="_blank" rel="noreferrer">API 文档</a>
+          <span>v0.1.0</span>
+        </div>
+      </aside>
+
+      <section class="chat-shell" aria-label="学习助手对话">
+        <header class="chat-header">
+          <div>
+            <h2>知识问答</h2>
+            <p>回答基于当前本地知识库</p>
+          </div>
+          <button id="clear-button" class="icon-button" type="button" title="清空对话" aria-label="清空对话">
+            ↻
+          </button>
+        </header>
+
+        <div id="messages" class="messages" aria-live="polite">
+          <article class="message assistant-message">
+            <div class="avatar" aria-hidden="true">知</div>
+            <div class="message-content">
+              <p>今天想复习哪个知识点？</p>
+            </div>
+          </article>
+        </div>
+
+        <form id="question-form" class="composer">
+          <label class="sr-only" for="question-input">输入问题</label>
+          <textarea id="question-input" rows="1" maxlength="1000" placeholder="输入你的学习问题" required></textarea>
+          <button id="send-button" type="submit">发送</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>

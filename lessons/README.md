@@ -22,5 +22,8 @@
 - `20_groundedness_eval`：检查回答句子是否有检索上下文依据
 - `21_groundedness_improved`：降低依据评估中的格式误报
 - `22_citation_guard`：要求并校验 RAG 回答中的引用来源
+- `23_structured_output`：用固定 Schema 生成并校验引用
+- `24_safe_tool`：使用结构化参数和白名单校验保护 Agent 工具
+- `25_tool_resource_limits`：限制工具的复杂度、深度、指数和值域
 
 根目录的 `rag.py` 是后续课程共用的 RAG 组件。
